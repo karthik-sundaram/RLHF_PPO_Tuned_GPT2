@@ -27,7 +27,7 @@ During inference, responses were generated using both the **vanilla GPT-2** and 
 3. **Harmlessness**: Avoiding misleading or harmful content.  
   
 ### Output Analysis:
-A total of 36 prompts were used for evaluation. The responses were reviewed and judged based on their adherence to the three criteria.
+A total of 36 prompts were used for evaluation. The responses were reviewed and judged based on their adherence to the three criteria. It was done using ChatGPT4o (did not use API to keep cost down and as data was small) - Check out this link for **detailed analysis**: _**https://chatgpt.com/share/66eb698e-d66c-8004-9318-bf354ce88fa2**_
 
 #### Results:
 
