@@ -26,10 +26,10 @@ During inference, responses were generated using both the vanilla GPT-2 and the 
 2. Truthfulness: The factual accuracy of the response.  
 3. Harmlessness: Avoiding misleading or harmful content.  
   
-#### Output Analysis:
+### Output Analysis:
 A total of 36 prompts were used for evaluation. The responses were reviewed and judged based on their adherence to the three criteria.
 
-##### Results:
+#### Results:
 
 - vanilla_responses: 9 better responses  
 - ppo_responses: 23 better responses  
@@ -37,7 +37,7 @@ A total of 36 prompts were used for evaluation. The responses were reviewed and 
   
 The PPO-tuned GPT-2 model significantly outperformed the vanilla model, providing more relevant, less repetitive, and safer answers. PPO fine-tuning helped the model handle sensitive topics more responsibly, demonstrating greater care in avoiding harmful or misleading outputs.  
 
-#### Detailed Findings:
+### Detailed Findings:
  
 - PPO-tuned responses were generally more coherent and aligned better with human feedback, making them more useful in conversational contexts.  
 - Vanilla GPT-2 responses often lacked the depth and safety precautions observed in the PPO-tuned model, frequently generating repetitive or less informative answers.
