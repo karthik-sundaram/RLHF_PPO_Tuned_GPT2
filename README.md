@@ -45,3 +45,6 @@ The PPO-tuned GPT-2 model significantly outperformed the vanilla model, providin
 ## Overall Summary
   
 The RLHF PPO-tuned GPT-2 model offers significant improvements over the vanilla GPT-2, particularly in relevance, safety, and overall helpfulness. By combining RLHF and PPO, the model aligns more closely with human preferences, making it more suitable for real-world applications that require trustworthy and non-harmful outputs.
+
+## Kaggle Notebook Link:  
+https://www.kaggle.com/code/karthiksundaram123/rlhf-ppo-tuned
