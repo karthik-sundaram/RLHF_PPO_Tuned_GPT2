@@ -1,0 +1,7 @@
+datasets
+transformers
+trl
+torch
+gradio
+langchain_groq
+tqdm

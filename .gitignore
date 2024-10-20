@@ -1,0 +1,26 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Ignore virtual environment
+venv/
+.env/
+
+# Ignore log files
+logs/
+
+# Ignore model checkpoints and outputs (optional, if you don’t want to track them)
+data/trained_reward_model/
+data/ppo_gpt2_model/
+data/ppo_gpt2_tokenizer/
+outputs/
+
+# Ignore large files or checkpoints explicitly
+*.pt
+*.bin
+
+# Ignore environment-specific settings
+.DS_Store
+.idea/
+.vscode/
