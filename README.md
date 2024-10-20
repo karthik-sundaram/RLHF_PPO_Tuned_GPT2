@@ -17,7 +17,7 @@
 - **Base Model**: GPT-2 Medium.  
 - **Reward Model**: Predicts feedback scores (positive or negative) based on the helpfulness and appropriateness of responses.  
 - **PPO Head**: Enhances the GPT-2 model by introducing reinforcement learning to align model outputs with human feedback.
-  
+
 ## Inference and Evaluation  
 
 During inference, responses were generated using both the **vanilla GPT-2** and the **PPO-tuned GPT-2** models. Responses were compared using criteria like:
@@ -48,3 +48,37 @@ The **RLHF PPO-tuned GPT-2** model offers significant improvements over the **va
 
 ## Kaggle Notebook Link:  
 https://www.kaggle.com/code/karthiksundaram123/rlhf-ppo-tuned
+
+
+## Installation  
+**1. Clone the Repository**  
+  
+git clone https://github.com/yourusername/RLHF_PPO_Tuned_GPT2.git  
+cd RLHF_PPO_Tuned_GPT2  
+
+**2. Create a Virtual Environment (Optional)**  
+python -m venv venv  
+source venv/bin/activate  # On Windows: `venv\Scripts\activate`  
+
+**3. Install Dependencies**  
+pip install -r requirements.txt  
+
+**4. Ensure PyTorch with CUDA Support**  
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117  
+
+## Usage  
+
+**1. Preparing the Dataset**  
+python src/prepare_dataset.py    
+  
+**2. Training the Reward Model**    
+python src/train_reward_model.py    
+   
+**3. Training the PPO Model**
+python src/train_ppo_model.py  
+
+**4. Generating Responses**    
+python src/generate_responses.py  
+ 
+
+
