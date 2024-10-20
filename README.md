@@ -79,6 +79,26 @@ python src/train_ppo_model.py
 
 **4. Generating Responses**    
 python src/generate_responses.py  
- 
+
+## Project Structure
+
+RLHF_PPO_Tuned_GPT2/  
+├── README.md  
+├── requirements.txt  
+├── .gitignore  
+├── src/  
+│   ├── prepare_dataset.py  
+│   ├── train_reward_model.py  
+│   ├── train_ppo_model.py  
+│   ├── generate_responses.py  
+│   └── utils.py  
+├── data/                         # Initially empty  
+│   ├── trained_reward_model/     # Created after reward model training  
+│   ├── ppo_gpt2_model/           # Created after PPO model training  
+│   └── ppo_gpt2_tokenizer/       # Tokenizer saved here  
+├── outputs/                      # Stores CSV outputs  
+│   └── query_response_pairs.csv  # Created after generating responses  
+├── logs/                         # Stores logs generated during training  
+└── LICENSE                       # Optional: Add a license file  
 
 
